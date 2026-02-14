@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# Tests
+test/
+test-e2e/
+jest.config.js
+stryker.conf.js
+
+# CI/CD & GitHub
+.github/
+.husky/
+
+# IDE
+.vscode/
+
+# Linting & Spelling
+eslint.config.mjs
+cspell/
+cspell.config.js
+
+# Other config
+.npmrc
+renovate.json
+sonar-project.properties
+tsconfig.json
+
+# Docs (not needed in package)
+CHANGELOG.md
+AUDIT.md
+
+# Logs
+*.log

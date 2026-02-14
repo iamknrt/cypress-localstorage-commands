@@ -8,7 +8,8 @@ const {
 module.exports = (on, config) => {
   const namedSnapshots = {};
   let globalSnapshot = {};
-  config.env[NODE_EVENTS_INSTALLED] = true;
+  if (!config.expose) config.expose = {};
+  config.expose[NODE_EVENTS_INSTALLED] = true;
 
   // Create cypress-local-storage-commands tasks
   on("task", {

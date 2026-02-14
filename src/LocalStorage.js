@@ -31,7 +31,7 @@ class LocalStorage {
   }
 
   constructor(localStorage, cy, Cypress) {
-    this._nodeEventsInstalled = Cypress.env(NODE_EVENTS_INSTALLED) === true;
+    this._nodeEventsInstalled = Cypress.expose(NODE_EVENTS_INSTALLED) === true;
     this._snapshot = {};
     this._namedSnapshots = {};
     this._cy = cy;
